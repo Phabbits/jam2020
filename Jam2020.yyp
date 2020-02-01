@@ -111,11 +111,35 @@
             }
         },
         {
+            "Key": "82e54978-0312-4415-aeb1-0c4e16e005eb",
+            "Value": {
+                "id": "be31574f-fb59-4f73-b9d9-e6699b657340",
+                "resourcePath": "sprites\/spr_train_blue\/spr_train_blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "920e32ef-1e77-4c21-937e-4cb22bf419cb",
+            "Value": {
+                "id": "c6e5ebbb-e05a-41fa-b61e-5749d70e523d",
+                "resourcePath": "sprites\/spr_train_red\/spr_train_red.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "93a5257c-7a37-49cf-9c03-23ea9e9f2353",
             "Value": {
                 "id": "ecb8da9f-510f-433a-a24f-e2cc0b451a54",
                 "resourcePath": "views\/93a5257c-7a37-49cf-9c03-23ea9e9f2353.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "99807864-f3b0-4911-b6e1-9629243d732e",
+            "Value": {
+                "id": "9fb244a7-46d3-4c82-b027-bd7918a76935",
+                "resourcePath": "sprites\/spr_train_neutral\/spr_train_neutral.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
