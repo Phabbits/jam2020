@@ -1,19 +1,10 @@
 {
-    "id": "dcab6894-c6b2-431a-aa8a-59703804d49a",
+    "id": "f7284e22-ce37-4770-9c7c-54cc2e4e59d3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_track",
+    "name": "obj_repairman",
     "eventList": [
-        {
-            "id": "3e916db1-aa07-463b-84d2-371e74e9148a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "dcab6894-c6b2-431a-aa8a-59703804d49a"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "caa8cc2f-2be0-4c4f-be7a-32c5d0025f78",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
