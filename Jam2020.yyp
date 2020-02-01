@@ -308,6 +308,14 @@
                 "id": "a2022f3c-ee7b-4c57-a1de-c8ac2b696c02",
                 "resourcePath": "objects\\obj_client\\obj_client.yy",
                 "resourceType": "GMObject"
+			}
+		},
+		{
+            "Key": "7f7672c1-2d88-47c0-a94d-ec75b0567d1b",
+            "Value": {
+                "id": "f5dff1af-bffa-4cc2-8939-a205eae0ea33",
+                "resourcePath": "paths\\pth_turn2\\pth_turn2.yy",
+                "resourceType": "GMPath"
             }
         },
         {
@@ -442,7 +450,7 @@
             "Key": "ba281339-f0fb-442c-8d8a-db71a8db761b",
             "Value": {
                 "id": "2e08e7e6-d8f6-430d-9a71-3e94c9d9edde",
-                "resourcePath": "paths\\pth_turn\\pth_turn.yy",
+                "resourcePath": "paths\\pth_turn1\\pth_turn1.yy",
                 "resourceType": "GMPath"
             }
         },
