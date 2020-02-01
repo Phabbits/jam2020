@@ -1,19 +1,10 @@
 {
-    "id": "60eaa446-e4f9-4af3-8e5d-e1e7e18fa775",
+    "id": "f7284e22-ce37-4770-9c7c-54cc2e4e59d3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_train",
+    "name": "obj_repairman",
     "eventList": [
-        {
-            "id": "3703d62d-bc07-4df0-b769-075dfeccbea7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "60eaa446-e4f9-4af3-8e5d-e1e7e18fa775"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

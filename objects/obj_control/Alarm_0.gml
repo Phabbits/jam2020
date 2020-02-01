@@ -5,4 +5,4 @@ with (instance_place(irandom(room_width), irandom(room_height), obj_track)){
 }
 
 //Reset buffers
-alarm[0] = irandom(break_buffer)
+alarm[0] = irandom_range(1, break_buffer)
