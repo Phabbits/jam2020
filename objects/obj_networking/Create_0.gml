@@ -1,4 +1,8 @@
 /// @description Initialize networking
+
+//set fullscreen
+window_set_fullscreen(true)
+
 global.Server = -1; // -1 client does not have server
 global.connectip = "127.0.0.1";
 global.Networking = id;

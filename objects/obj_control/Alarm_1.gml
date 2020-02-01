@@ -14,4 +14,4 @@ if !(place_meeting(xx, yy, obj_score)){
 }
 
 //Reset buffers
-alarm[1] = irandom_range(1, coin_buffer)
+alarm[1] = irandom_range(coin_buffer_min, coin_buffer_max)
