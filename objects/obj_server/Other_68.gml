@@ -19,7 +19,7 @@ switch (msgId) {
         break;
     case CLIENT_PLAY:
         //all other sockets are connected client sockets, and we have recieved commands from them.
-        scr_server_received_data();
+//        scr_server_received_data();
         break;
     }
 
