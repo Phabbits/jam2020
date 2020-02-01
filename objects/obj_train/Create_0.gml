@@ -9,8 +9,8 @@ var tile = instance_place(x, y, obj_track)
 //Find "to"
 for (var i = 0; i < 4; i ++){
 	if i != from{
-		if tile.path[i]{
-			to = i
-		}
+		//if tile.path[i]{
+		//	to = i
+		//}
 	}
 }

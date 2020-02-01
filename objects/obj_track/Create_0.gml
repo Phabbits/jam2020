@@ -2,8 +2,10 @@
 
 type = image_number;
 broken = false;
+path = [0, 0, 0, 0];
 
 image_index = irandom (5);
+image_speed = 0;
 
 switch (image_index) {
 	case 0:

@@ -223,18 +223,10 @@
             }
         },
         {
-            "Key": "c4a553a3-8bd8-4754-9eec-74a4e9e7005a",
-            "Value": {
-                "id": "e2dc7459-ecc8-4051-a0ad-13c1b7b21ab8",
-                "resourcePath": "sprites\\spr_track_turn\\spr_track_turn.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "caa8cc2f-2be0-4c4f-be7a-32c5d0025f78",
             "Value": {
                 "id": "cbd66ac0-8823-43e5-a8fb-2caae9009a45",
-                "resourcePath": "sprites\\spr_track_straight\\spr_track_straight.yy",
+                "resourcePath": "sprites\\spr_track\\spr_track.yy",
                 "resourceType": "GMSprite"
             }
         },
