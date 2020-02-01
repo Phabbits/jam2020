@@ -2,7 +2,7 @@
 
 //Direction train is coming from
 
-move_speed = 1
+move_speed = .4
 from = 2
 to = 0
 event_user(0)

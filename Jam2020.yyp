@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "7f7672c1-2d88-47c0-a94d-ec75b0567d1b",
+            "Value": {
+                "id": "f5dff1af-bffa-4cc2-8939-a205eae0ea33",
+                "resourcePath": "paths\\pth_turn2\\pth_turn2.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "82e54978-0312-4415-aeb1-0c4e16e005eb",
             "Value": {
                 "id": "be31574f-fb59-4f73-b9d9-e6699b657340",
@@ -250,7 +258,7 @@
             "Key": "ba281339-f0fb-442c-8d8a-db71a8db761b",
             "Value": {
                 "id": "2e08e7e6-d8f6-430d-9a71-3e94c9d9edde",
-                "resourcePath": "paths\\pth_turn\\pth_turn.yy",
+                "resourcePath": "paths\\pth_turn1\\pth_turn1.yy",
                 "resourceType": "GMPath"
             }
         },
