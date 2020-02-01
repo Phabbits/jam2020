@@ -1,16 +1,12 @@
 /// @description Initialize train
 
 //Direction train is coming from
-from = 1
 
-//Get starting tile
-var tile = instance_place(x, y, obj_track)
+move_speed = 1
+from = 2
+to = 0
+event_user(0)
 
-//Find "to"
-for (var i = 0; i < 4; i ++){
-	if i != from{
-		//if tile.path[i]{
-		//	to = i
-		//}
-	}
+with instance_place (x, y, obj_track) {
+	other.image_angle = image_index * 90
 }
