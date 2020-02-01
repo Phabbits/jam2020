@@ -4,3 +4,5 @@
 with (instance_place(x,y,obj_track)){
 	broken = true	
 }
+
+image_speed = 0
