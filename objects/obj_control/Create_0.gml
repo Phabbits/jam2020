@@ -4,7 +4,7 @@
 scr_generate_map()
 
 //Generate player
-instance_create_layer(room_width/2, 32/2, "Instances", obj_player)
+instance_create_layer(32/2, room_height/2 - 16, "Instances", obj_player)
 
 //Break tile timer
 break_buffer = 60
