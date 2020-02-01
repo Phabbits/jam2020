@@ -7,7 +7,10 @@ var h = room_height
 var xx = irandom(w/s)*s + s/2
 var yy = irandom(h/s)*s  + s/2
 
-with (instance_create_layer(xx, yy, "Instances", obj_score)){
+//Ensure coins do not overlap
+if !(place_meeting(xx, yy, obj_score)){
+	with (instance_create_layer(xx, yy, "Instances", obj_score)){
+	}
 }
 
 //Reset buffers
