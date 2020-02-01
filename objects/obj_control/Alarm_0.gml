@@ -1,7 +1,10 @@
 /// @description Break tiles
-with (instance_place(irandom(room_width), irandom(room_height), obj_track)){
-	//Break
-	broken = true
+
+xx = irandom(room_width/32)*32
+yy = irandom(room_height/32)*32
+
+if not instance_place(xx,yy,obj_cracks){
+	instance_create_layer(xx,yy,"Instances",obj_cracks)	
 }
 
 //Reset buffers

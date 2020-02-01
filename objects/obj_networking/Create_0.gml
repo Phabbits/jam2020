@@ -25,8 +25,14 @@ iServerName.text = "Newbius";
 global.online = true;
 
 //Create host button
-host_button = instance_create_layer(320, 320, "Instances", obj_input)
+host_button = instance_create_layer(96, 832, "Instances", obj_input)
 host_button.title = ""
 host_button.text = "Host"
 host_button.action = "host"
+
+//Create host button
+host_button = instance_create_layer(736, 832, "Instances", obj_input)
+host_button.title = ""
+host_button.text = "Quit"
+host_button.action = "quit"
 

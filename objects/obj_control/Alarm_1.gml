@@ -9,7 +9,7 @@ var yy = irandom(h/s)*s  + s/2
 
 //Ensure coins do not overlap
 if !(place_meeting(xx, yy, obj_score)){
-	with (instance_create_layer(xx, yy, "Instances", obj_score)){
+	with (instance_create_layer(xx, yy, "Instances_1", obj_score)){
 	}
 }
 
