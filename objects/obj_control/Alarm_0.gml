@@ -8,4 +8,4 @@ if not instance_place(xx,yy,obj_cracks){
 }
 
 //Reset buffers
-alarm[0] = irandom_range(1, break_buffer)
+alarm[0] = irandom_range(break_buffer_min, break_buffer_max)
