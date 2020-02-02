@@ -11,11 +11,17 @@ if tile = noone {
 }
 if instance_exists(cracks){
 	if cracks.image_index = 4 {
+		var explosion = instance_create_layer(x,y,"Instances_1",obj_explosion)
+		explosion.connect_id = player.connect_id
+		audio_play_sound(snd_explosion, 1, 0)
 		instance_destroy (self)
 	}
 }
 if tile != noone {
 	if tile.path[from] != 1 {
+		var explosion = instance_create_layer(x,y,"Instances_1",obj_explosion)
+		explosion.connect_id = player.connect_id
+		audio_play_sound(snd_explosion, 1, 0)
 		instance_destroy (self)
 	}
 }

@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "ac9ca209-59d4-4979-a852-42eab104071d",
+            "Value": {
+                "id": "0f055db6-cadc-447c-bdef-5ca73ea714ea",
+                "resourcePath": "sounds\\snd_cash\\snd_cash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "aca25cf7-4dda-43fe-b42f-9fbcdcce7fa2",
             "Value": {
                 "id": "45c41505-2307-4cf7-997d-ffb578341e8d",
@@ -965,6 +973,7 @@
         "d2938268-0a90-427c-8bef-899fdb2eedad",
         "38a28651-909b-4596-93ab-8ac0808978de",
         "06beb4fb-6729-45d9-a33b-6902cc6c4f4c",
+        "e8eacf80-7166-42d0-af1f-9172246f3e4e",
         "74f107aa-39b1-40d8-ae2d-058b12a34ae3",
         "90dec00e-0334-4fcf-94f3-03c993249bca",
         "27bc569b-1de9-4e03-82ab-bbe0746d442e",
@@ -990,8 +999,7 @@
         "0610a1d8-32ff-44d6-a20b-ae86a8ee954a",
         "73467cd1-15ef-4457-9caa-654a7943dafe",
         "25fc3dad-5340-4306-a7fa-1f247a8b70f0",
-        "fb648b52-66b9-452b-8a3b-eed6224274a1",
-        "e8eacf80-7166-42d0-af1f-9172246f3e4e"
+        "fb648b52-66b9-452b-8a3b-eed6224274a1"
     ],
     "tutorial": ""
 }
