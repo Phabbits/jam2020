@@ -37,6 +37,11 @@
 	            inst.mouseX = buffer_read(buff, buffer_u16);
 	            inst.mouseY = buffer_read(buff, buffer_u16);
                 break;
+			case TILE_CMD:
+				//Everything is with respect to obj_server
+	            ds_list_add(tiles, buffer_read(buff, buffer_u32))
+				//show_debug_message("Recieve tile click" + string(ds_list_find_value(tiles, ds_list_size(tiles)-1)))
+                break;
             case PING_CMD:
                 // client message, confirm login
                 ds_map_replace(clientMessages, ip, SERVER_PLAY);  
