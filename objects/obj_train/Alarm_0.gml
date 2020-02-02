@@ -1,4 +1,4 @@
 /// @description Maintains train color
 // You can write your code in this editor
 
-Train.image_blend = global.Menu.ColourArray[player.connect_id]
+image_blend = global.Menu.ColourArray[player.connect_id]
