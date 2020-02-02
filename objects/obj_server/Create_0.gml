@@ -54,3 +54,4 @@ serverDebug = false;
 
 //tiles - list of all tiles that have been clicked, reset often
 tiles = ds_list_create()
+tile_change_types = ds_list_create()
