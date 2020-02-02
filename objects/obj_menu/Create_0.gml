@@ -16,6 +16,7 @@ input_buffer_max = 4;
 players = ds_list_create();
 readys = ds_list_create();
 names = ds_list_create();
+game_players = ds_list_create();
 
 ///Server
 // list to hold data for different menus, lobby
