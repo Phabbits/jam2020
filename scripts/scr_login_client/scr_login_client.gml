@@ -19,6 +19,7 @@
     
     // update name in lobby
     var playerIndex = inst.connectID;
+	show_debug_message("Call scr_update_name")
     scr_update_name(playerIndex, inst.name);
     
     // client message, confirm login
