@@ -59,3 +59,6 @@ socketIn = -1;
 // serverIP - IP address of where message are coming in from
 serverIP = -1;
 
+network_players = ds_list_create()
+show_debug_message("nope" + string(ds_list_find_index(network_players, 0)))
+

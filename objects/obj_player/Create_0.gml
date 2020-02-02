@@ -13,3 +13,7 @@ Repair = instance_create_layer(x, y, "Instances", obj_repairman)
 Repair.player = self;
 
 trains = 3
+
+//Networking
+connect_id = -1
+

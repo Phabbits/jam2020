@@ -42,6 +42,7 @@
 				var xx = buffer_read(buff, buffer_u16)
 				var yy = buffer_read(buff, buffer_u16)
 	            ds_list_add(tiles, instance_position(xx, yy, obj_track))
+				ds_list_add(tile_change_types, buffer_read(buff, buffer_u8))
 				show_debug_message("Recieve tile click" + string(ds_list_find_value(tiles, ds_list_size(tiles)-1)) + " " + string(xx) + " " + string(yy))
                 break;
             case PING_CMD:

@@ -23,6 +23,7 @@ if (state == STATE_LOBBY) {
     if (global.online) {
         var attributes = 2; // attributes per player
         var playerAmount = ds_list_size(server_data); // amount of players * attributes
+		
         // attribute order: team, ready, name, character
         var bh = 32;
         
@@ -88,4 +89,9 @@ if (state == STATE_LOBBY) {
         }
 		*/
     }
+	draw_set_font(fnt_basic_medium)
+	draw_text(room_width/2,room_height-380,"TUTORIAL")
+	
+	draw_sprite(spr_tutorial_box,-1,room_width/2,room_height-200)
+	
 }

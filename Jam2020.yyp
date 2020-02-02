@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "2f9676d7-d858-4ed1-a915-27a9902b823f",
+            "Value": {
+                "id": "2db56e59-a429-4b8f-90a5-d0c0b2cd94c4",
+                "resourcePath": "sounds\\snd_explosion\\snd_explosion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "3490decc-3a59-4e99-9f4f-da73451439cc",
             "Value": {
                 "id": "6475eb4f-d5e1-49f6-b0a5-842f4b1c49cd",
@@ -404,6 +412,14 @@
                 "id": "557d8edd-7e32-4dd7-b329-a7ea64cfea9b",
                 "resourcePath": "objects\\obj_train\\obj_train.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6890c19b-0f87-47eb-9fce-f3e9f642a85d",
+            "Value": {
+                "id": "44c0fc93-8a42-433b-9e5a-828a974675e0",
+                "resourcePath": "sounds\\snd_coin\\snd_coin.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -679,6 +695,14 @@
             }
         },
         {
+            "Key": "c9eba803-eb3e-41f9-b8d3-7d76cc282c5d",
+            "Value": {
+                "id": "7c7ebfc7-9288-4a18-b291-b7a4748d342a",
+                "resourcePath": "sprites\\spr_tutorial_box\\spr_tutorial_box.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "caa8cc2f-2be0-4c4f-be7a-32c5d0025f78",
             "Value": {
                 "id": "cbd66ac0-8823-43e5-a8fb-2caae9009a45",
@@ -748,6 +772,14 @@
                 "id": "3509bf1b-feb6-4f66-9a46-273b1d8f9bfe",
                 "resourcePath": "sprites\\spr_cracks\\spr_cracks.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6703638-19a1-4a88-8910-6c298ce2c1c5",
+            "Value": {
+                "id": "d8d6dfd6-704e-442c-9649-294751f471f4",
+                "resourcePath": "sounds\\snd_mouseover\\snd_mouseover.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -837,13 +869,13 @@
         "ef013ca6-19cc-4f27-83f3-99dcb62ee4a8",
         "a2ff5f20-3edf-40c7-89c0-013e37926494",
         "25fa5519-fc07-49a0-ad4c-fd5f27f3dcb9",
-        "25fc3dad-5340-4306-a7fa-1f247a8b70f0",
         "13ce9d38-3c27-4b9d-85f5-2a82f3bfa624",
         "7c488e02-296d-4e9c-a582-13824cb85412",
         "44a56d41-3189-45ed-a006-6df8f0830036",
         "28c91fce-65ff-43d1-880e-764c6f4a7301",
         "0610a1d8-32ff-44d6-a20b-ae86a8ee954a",
         "73467cd1-15ef-4457-9caa-654a7943dafe",
+        "25fc3dad-5340-4306-a7fa-1f247a8b70f0",
         "fb648b52-66b9-452b-8a3b-eed6224274a1"
     ],
     "tutorial": ""
