@@ -11,3 +11,5 @@ Train = instance_create_layer(x, y, "Instances", obj_train)
 Train.player = self;
 Repair = instance_create_layer(x, y, "Instances", obj_repairman)
 Repair.player = self;
+
+trains = 3

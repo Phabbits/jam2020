@@ -6,3 +6,4 @@ with (instance_place(x,y,obj_track)){
 }
 
 image_speed = 0
+image_index = 3
