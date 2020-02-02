@@ -8,7 +8,7 @@
         switch(global.Menu.state) {
             case STATE_LOBBY:
                 // write the lobby information to the sending buffer
-//                scr_write_lobby();
+                scr_write_lobby();
                 
                 // check for clients to send confirmations
                 for (i = 0; i < count; i++) { 
@@ -21,7 +21,7 @@
                     // check if need to send a confirmation
                     if (message != SERVER_PLAY) {
                         // send neccesary confirmation
-                        
+                        //show_debug_message("not play")
                         // get the client message buffer
                         var buff = confirmBuffer;
                         
@@ -35,11 +35,11 @@
                         buffer_write(buff, buffer_u8, 0);//sequenceOut); Written in send buffer
                         
                         // send confirmation to the client
-//                        scr_send_buffer(ip, i, buff);
+                        scr_send_buffer(ip, i, buff);
                         }
                     else {
                         // send pre_written lobby data
-//                        scr_send_buffer(ip, i, gameBuffer);
+                        scr_send_buffer(ip, i, gameBuffer);
                         }
                     }
                 break;
@@ -58,7 +58,7 @@
                     // check if client is logged in
                     if (message == SERVER_PLAY) {
                         // send pre_written data
-//                        scr_send_buffer(ip, i, gameBuffer);
+                        scr_send_buffer(ip, i, gameBuffer);
                         }
                     }
                 break;
@@ -80,7 +80,7 @@
 //                        scr_write_game_update(ip, i);
                         
                         // send pre_written data
-//                        scr_send_buffer(ip, i, gameBuffer);
+                        scr_send_buffer(ip, i, gameBuffer);
                         }
                     }
                 break;
@@ -99,7 +99,7 @@
                     // check if client is logged in
                     if (message == SERVER_PLAY) {
                         // send pre_written data
-//                        scr_send_buffer(ip, i, gameBuffer);
+                        scr_send_buffer(ip, i, gameBuffer);
                         }
                     }
                 break;

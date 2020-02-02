@@ -12,11 +12,11 @@ if (serverDebug) {
     var count = ds_list_size(iplist); // get the amount of clients connected
     
     // draw background
-    draw_rectangle(0, 0, 500, count*2*yOffset+30+10, false);
+    draw_rectangle(0, 0, 500, count*2*yOffset+30+10+60, false);
     
     // setup drawing
     draw_set_halign(fa_left);
-    draw_set_font(fnt_command);
+    draw_set_font(fnt_basic);
     draw_set_color(c_red);
     
     // draw the amount of players
@@ -53,8 +53,8 @@ if (serverDebug) {
 	        // increment drawOffset
 	        drawOffset++;
 	        draw_text(10, 30+yOffset*drawOffset, string_hash_to_newline("Socket Out: " + string(inst.socketOut)));
-	        draw_text(120, 30+yOffset*drawOffset, string_hash_to_newline("Message Success: " + string(inst.messageSuccess)));
-	        draw_text(340, 30+yOffset*drawOffset, string_hash_to_newline("Sequence Out: " + string(sequenceOut)));
+	        draw_text(10, 50+yOffset*drawOffset, string_hash_to_newline("Message Success: " + string(inst.messageSuccess)));
+	        draw_text(10, 70+yOffset*drawOffset, string_hash_to_newline("Sequence Out: " + string(sequenceOut)));
 	        // increment drawOffset
 	        drawOffset++;
 	        }

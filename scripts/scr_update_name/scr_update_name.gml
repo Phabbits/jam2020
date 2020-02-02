@@ -7,3 +7,4 @@
 */
 
 with (global.Menu) ds_list_replace(names, argument0, argument1);
+show_debug_message("scr_update_name replaced: " + string(argument0) + " with " + string(argument1))
