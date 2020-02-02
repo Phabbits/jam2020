@@ -1,6 +1,6 @@
 //draw set up
-draw_set_font(fnt_basic);
-draw_set_color(c_white);
+draw_set_font(fnt_basic_small);
+draw_set_color(c_black);
 draw_set_valign(fa_middle);
 //var bw = 77; //half button width
 var bh = 16; //half button height
@@ -12,9 +12,9 @@ if (state == STATE_LOBBY) {
     //draw_sprite(spr_menu, 0, room_width/2, room_height-200);
     
     //set up drawing
-    draw_set_font(fnt_basic);
+    draw_set_font(fnt_basic_small);
     draw_set_valign(fa_top);
-    draw_set_color(c_white);
+    draw_set_color(c_black);
     
     var bh = 64;
     var sw = 32;
@@ -29,10 +29,12 @@ if (state == STATE_LOBBY) {
         draw_set_halign(fa_left);
         // loop through and draw each player
         for (var i = 0; i < playerAmount; i += attributes) {
-            draw_rectangle(32, 32 + bh*i / attributes, room_width-32, 32+bh+bh*i / attributes, true);
+			draw_set_color(c_white)
+            draw_rectangle(32, 62 + bh*i / attributes, room_width-32, 62+bh+bh*i / attributes, false);
+			draw_set_color(c_black)
 //            draw_text(48+sw, 40 + bh*i / attributes, string_hash_to_newline("Team " + string(ds_list_find_value(server_data, i))));
-            draw_text(128+sw, 40 + bh*i / attributes, string_hash_to_newline("Ready: " + string(ds_list_find_value(server_data, i + 0))));
-            draw_text(240+sw, 40 + bh*i / attributes, string_hash_to_newline("Name: " + string(ds_list_find_value(server_data, i + 1))));
+            draw_text(210+sw, 65 + bh*i / attributes, string_hash_to_newline("Ready: " + string(ds_list_find_value(server_data, i + 0))));
+            draw_text(450+sw, 65 + bh*i / attributes, string_hash_to_newline("Name: " + string(ds_list_find_value(server_data, i + 1))));
 //            draw_text(400+2*sw, 40 + bh*i / attributes, string_hash_to_newline("Character: " + ds_list_find_value(server_data, i + 3)));
 //            draw_sprite(spr_lobby, 0, 48, 46 + bh*i / attributes);
 //            draw_sprite(spr_lobby, 1, 426, 46 + bh*i / attributes);
@@ -40,7 +42,8 @@ if (state == STATE_LOBBY) {
         
         // draw prompt
         draw_set_halign(fa_center);
-        draw_set_font(fnt_basic);
+        draw_set_font(fnt_basic_small)
+        draw_set_color(c_black)
 //        var controls = 0;
         //var prompt = scr_get_input_name(global.controls[controls, LEFTSELC_KEY], LEFTSELC_KEY, global.controls[controls, KEY_TYPE]);
         var prompt = "Enter"
@@ -49,8 +52,8 @@ if (state == STATE_LOBBY) {
 	
     else {
         var di = 0; //draw index
-        
-        draw_set_color(c_white)
+        draw_set_font(fnt_basic_small)
+        draw_set_color(c_black)
         // iterate through each local player
         for (var i = 0; i < ds_list_size(players); i ++) {
             draw_rectangle(32, 32 + bh*di, room_width-32, 32+bh+bh*i, true);
