@@ -14,7 +14,8 @@ if connect_id == obj_client.connect_id{
 					sy = tile.y
 				}
 				else{
-					ds_list_delete(repair_list,i)
+					ds_list_delete(repair_list, i)
+					ds_list_delete(local_repair_list, i)
 				}
 			}
 		}
