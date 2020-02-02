@@ -41,7 +41,6 @@
     
     //total number of players
     buffer_write(buff, buffer_u8, ds_list_size(global.Menu.players)); //buffer_u8 MAX: 255
-	buffer_write(buff, buffer_u32, obj_client.seeed);
     
     //send player information in order
     with(global.Menu) {

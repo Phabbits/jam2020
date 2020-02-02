@@ -102,7 +102,6 @@ if(client == eventid) {
 								
                             // get the amount of players
                             var players = buffer_read(buff,buffer_u8);
-							seeed = buffer_read(buff,buffer_u32)
                             // temporarily hold server data, local because it will be called a lot of times
                             server_data = ds_list_create();
                             // read the data

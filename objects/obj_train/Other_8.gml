@@ -1,5 +1,7 @@
 /// @description 
 
+event_inherited()
+
 //Destroy if not on the tracks
 
 from = scr_find_to(to)

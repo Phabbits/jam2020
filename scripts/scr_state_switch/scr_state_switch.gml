@@ -37,7 +37,6 @@ with (global.Menu) {
 		case STATE_LOBBY:
             switch (to) {
                 case STATE_GAME:
-					random_set_seed(obj_client.seeed)
                     room_goto_next()
                     show_debug_message(string(state))
                     break;
