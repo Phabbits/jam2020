@@ -2,7 +2,7 @@
 
 //Direction train is coming from
 
-move_speed = .4
+move_speed = .5
 from = 2
 to = 0
 player = -4
