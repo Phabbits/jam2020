@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 var train = instance_nearest(x,y,obj_train)
-if distance_to_object(train) < 64{
+if distance_to_object(train) < 32{
 	train.player.game_score += ds_list_size(train.cart_list)
 	for (var i = 0; i < ds_list_size(train.cart_list); i++){
 		audio_play_sound(snd_cash, 1, 0)

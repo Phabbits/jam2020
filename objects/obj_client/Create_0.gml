@@ -1,5 +1,8 @@
 /// @description  server game data
 
+//The random generator
+seeed = current_time
+
 // add all basic sprites to send into a list
 basicSprites = ds_list_create();
 basicImages = ds_list_create();
