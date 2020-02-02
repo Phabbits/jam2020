@@ -28,6 +28,16 @@
     buffer_write(buff, buffer_s16, 0);
     buffer_write(buff, buffer_s16, 0);
 	
+	//Write all players
+	var count = ds_list_size(obj_menu.game_players); // get the amount of clients connected
+	buffer_write(buff, buffer_u8, count)
+	// check for clients to send confirmations
+	for (i = 0; i < count; i++) { 
+		var player = 
+		//Train speed
+	    buffer_write(buff, buffer_u8, inst.connectID)
+	    }
+		
 	//Check all tile clicks
 	if not ds_list_empty(tiles){
 		var am = ds_list_size(tiles)

@@ -87,9 +87,11 @@ if(client == eventid) {
 							var player_amount = buffer_read(buff, buffer_u8)
 							for (var i = 0; i < player_amount; i ++){
 								var ID = buffer_read(buff, buffer_u8)
+								var name = buffer_read(buff, buffer_string)
 								
 								if (ds_list_find_index(network_players, ID) == -1){
 									ds_list_add(network_players, ID)
+									ds_list_add(network_names, name)
 									//show_debug_message("hhsafs" + string(ds_list_find_index(network_players, ID)))
 								}
 							}
