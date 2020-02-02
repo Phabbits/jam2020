@@ -57,3 +57,4 @@ socketOut = -1;
 // messageSuccess - whether the message was succesful sent
 messageSuccess = -1;
 
+inputs = array_create(3);

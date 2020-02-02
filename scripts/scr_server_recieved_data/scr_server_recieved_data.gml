@@ -25,25 +25,17 @@
         switch (cmd) {
             case INPUT_CMD:
                 // get the amount of controls
-                var amount = buffer_read(buff, buffer_u8);
+                var amount = 3
                 
                 // iterate and get each input
                 for (var i = 0; i < amount; i++;) {
                     var newState = buffer_read(buff, buffer_s8);
-                    //inst.inputs[i] = scr_update_input(inst.inputs[i], newState);
+                    inst.inputs[i] = scr_update_input(inst.inputs[i], newState);
                     //show_debug_message(string(i) + " "+ string(inst.inputs[i]) + " "+string(newState));
-                    }
-                
-				if inst.inputs[KEY_TYPE] != CONTROLS_KEYBOARD and inst.inputs[KEY_TYPE] != CONTROLS_MOUSE {
-					//gamepad aiming
-					inst.gamepad_aimx = buffer_read(buff, buffer_s8);
-					inst.gamepad_aimy = buffer_read(buff, buffer_s8);
 				}
-				else {
-	                // get mouse position if in case mouse input
-	                inst.mouseX = buffer_read(buff, buffer_u16);
-	                inst.mouseY = buffer_read(buff, buffer_u16);
-				}
+	            // get mouse position if in case mouse input
+	            inst.mouseX = buffer_read(buff, buffer_u16);
+	            inst.mouseY = buffer_read(buff, buffer_u16);
                 break;
             case PING_CMD:
                 // client message, confirm login

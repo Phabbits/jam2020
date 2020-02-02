@@ -34,5 +34,13 @@ with (global.Menu) {
                     break;
 			}
             break;
+		case STATE_LOBBY:
+            switch (to) {
+                case STATE_GAME:
+                    room_goto_next()
+                    show_debug_message(string(state))
+                    break;
+			}
+            break;
         }
     }

@@ -35,11 +35,13 @@ if(client == eventid) {
             if (global.NetworkState == NETWORK_CONNECT and msgId == SERVER_CONNECT) {
                 // connection confirmed! move to login state
                 global.NetworkState = NETWORK_LOGIN;
+				//show_debug_message("login" + string(eventid));
                 }
             // check if server is confirming a login
             if (global.NetworkState == NETWORK_LOGIN and msgId == SERVER_LOGIN) {
                 // connection confirmed! move to login state
                 global.NetworkState = NETWORK_PLAY;
+				//show_debug_message("play" + string(eventid));
                 }
             // game check is handled later
             }
@@ -63,14 +65,13 @@ if(client == eventid) {
             var msgId = buffer_read(buff, buffer_s8);
             // update debug
             msgIDin = msgId;
-            
+			
             if (msgId == SERVER_PLAY) { //server message, low priority
                 //read sequence
                 var sequence = buffer_read(buff, buffer_u8);
                 if (scr_sequence_more_recent(sequence, sequenceIn, SEQUENCE_MAX)) { //this package is newer and therefore requires an update, 65,535 is for buffer_u16
                     //update sequenceIn
                     sequenceIn = sequence;
-                    
                     // update disconnect buffer
                     alarm[0] = disconnectBuffer;
                     
@@ -87,10 +88,8 @@ if(client == eventid) {
                             server_data = ds_list_create();
                             // read the data
                             for(var i=0;i<players;i++){
-                                ds_list_add(server_data, buffer_read(buff,buffer_u8));       // team
                                 ds_list_add(server_data, buffer_read(buff,buffer_bool));     // ready
                                 ds_list_add(server_data, buffer_read(buff,buffer_string));   // name
-                                ds_list_add(server_data, buffer_read(buff,buffer_string));   // character
                                 }
                             // copy loaded data to menu
                             ds_list_copy(global.Menu.server_data, server_data);
