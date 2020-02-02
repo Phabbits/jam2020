@@ -1,6 +1,6 @@
 /// @description  UDP server code - Detect servers "broadcast"
 var eventid = ds_map_find_value(async_load, "id");
-
+show_debug_message("Check for broadcast message")
 if eventid == broadcast_server{
     var ip = ds_map_find_value(async_load, "ip");
 
