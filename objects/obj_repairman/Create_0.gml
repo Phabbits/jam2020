@@ -3,3 +3,4 @@
 
 move_speed = 3
 player = -1
+repairing = false
