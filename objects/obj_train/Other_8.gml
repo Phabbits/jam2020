@@ -19,17 +19,21 @@ if instance_exists(cracks){
 		instance_destroy (self)
 	}
 }
-else if tile.path[from] != 1 {
-	player.trains -= 1
-	instance_create_layer(x,y,"Instances_1",obj_explosion)
-	instance_destroy (self)
+if tile != noone {
+	if tile.path[from] != 1 {
+		player.trains -= 1
+		instance_create_layer(x,y,"Instances_1",obj_explosion)
+		instance_destroy (self)
+	}
 }
 
 //update to and from
-for (var i = 0; i < 4; i ++){
-	if i != from{
-		if tile.path[i]{
-			to = i
+if tile != noone {
+	for (var i = 0; i < 4; i ++){
+		if i != from{
+			if tile.path[i]{
+				to = i
+			}
 		}
 	}
 }
