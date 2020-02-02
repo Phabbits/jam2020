@@ -19,16 +19,11 @@ if connect_id == obj_client.connect_id{
 			}
 		}
 	}
-
-
-	/// @description 
-
-	draw_set_halign(fa_left)
-	draw_set_font(fnt_basic)
-	draw_text (30, 750, "Score:")
-	draw_text (120, 750, game_score)
 }
 draw_set_font(fnt_basic)
+draw_set_halign(fa_right)
 draw_set_color(color)
-draw_text(30+(25*connect_id),room_height-50,name)
+draw_text(115+(150*connect_id),750,name)
+draw_set_halign(fa_left)
+draw_text (130+(150*connect_id), 750, game_score)
 draw_set_color(c_white)
