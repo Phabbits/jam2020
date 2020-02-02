@@ -11,5 +11,4 @@ if distance_to_object(train) < 32{
 		instance_destroy(cart)
 	}
 	ds_list_clear(train.cart_list)
-	
 }
