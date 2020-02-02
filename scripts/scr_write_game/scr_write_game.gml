@@ -35,12 +35,12 @@
 	for (i = 0; i < count; i++) { 
 		var player = ds_list_find_value(obj_menu.game_players, i)
 		//Train speed
-	    buffer_write(buff, buffer_u8, player.Train.move_speed*10)
+	    buffer_write(buff, buffer_u8, player.Train.local_move_speed*10)
 		//Repair list
-		var repair_amount = ds_list_size(player.repair_list)
+		var repair_amount = ds_list_size(player.local_repair_list)
 		buffer_write(buff, buffer_u8, repair_amount)
 		for (var j = 0; j < repair_amount; j++) {
-			var crack = ds_list_find_value(player.repair_list,j)
+			var crack = ds_list_find_value(player.local_repair_list,j)
 			if instance_exists(crack){
 				buffer_write(buff, buffer_u16, crack.x)
 				buffer_write(buff, buffer_u16, crack.y)
