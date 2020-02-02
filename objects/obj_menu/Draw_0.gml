@@ -21,7 +21,7 @@ if (state == STATE_LOBBY) {
     
     // if online draw info from server
     if (global.online) {
-        var attributes = 4; // attributes per player
+        var attributes = 2; // attributes per player
         var playerAmount = ds_list_size(server_data); // amount of players * attributes
         // attribute order: team, ready, name, character
         var bh = 32;

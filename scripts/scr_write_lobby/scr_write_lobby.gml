@@ -28,6 +28,7 @@
     
     //send player information in order
     with(global.Menu) {
+		//show_debug_message(string(ds_list_size(players)))
         for (var i = 0; i < ds_list_size(players); i ++) {
             buffer_write(buff, buffer_bool, ds_list_find_value(readys, i)); // ready
             buffer_write(buff, buffer_string, ds_list_find_value(names, i)); // name
