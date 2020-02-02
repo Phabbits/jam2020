@@ -23,7 +23,7 @@ if connect_id == obj_client.connect_id{
 draw_set_font(fnt_basic)
 draw_set_halign(fa_right)
 draw_set_color(color)
-draw_text(30+(50*connect_id),room_height-50,name)
+
 draw_text(115+(150*connect_id),750,name)
 draw_set_halign(fa_left)
 draw_text (130+(150*connect_id), 750, game_score)

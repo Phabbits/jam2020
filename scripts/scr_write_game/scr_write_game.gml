@@ -40,7 +40,7 @@
 		var repair_amount = ds_list_size(player.repair_list)
 		buffer_write(buff, buffer_u8, repair_amount)
 		for (var j = 0; j < repair_amount; j++) {
-			var crack = ds_list_find_value(player.repair_list,i)
+			var crack = ds_list_find_value(player.repair_list,j)
 			if instance_exists(crack){
 				buffer_write(buff, buffer_u16, crack.x)
 				buffer_write(buff, buffer_u16, crack.y)
