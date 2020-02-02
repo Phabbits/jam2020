@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "3ddd98c7-0c7d-4141-9866-65c3bc81e458",
+            "Value": {
+                "id": "3befa5e4-5cfb-4046-a752-7710d959af4f",
+                "resourcePath": "objects\\obj_coin\\obj_coin.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f562e63-491f-4b88-afd2-ba4f0c8a6608",
             "Value": {
                 "id": "09119ff5-7ed4-4b88-a0ba-a133a43122de",
@@ -796,6 +804,14 @@
                 "id": "5a07d5a9-28cf-48af-845b-9e360762091f",
                 "resourcePath": "fonts\\fnt_basic_medium\\fnt_basic_medium.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "c5a0f149-52ce-405c-9e4d-4674d0ed32da",
+            "Value": {
+                "id": "9d1740c8-5d44-4332-9cd3-c753492376a2",
+                "resourcePath": "sprites\\spr_coin\\spr_coin.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
