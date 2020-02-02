@@ -3,5 +3,7 @@
 
 draw_sprite(spr_score_gui,-1,382,400)
 draw_set_color(c_black)
+draw_set_font(fnt_basic_medium)
+draw_text(382,382,
 draw_set_font(fnt_basic_large)
-draw_text(450,430,obj_player.game_score)
+draw_text(450,430,ds_list_find_value(game_players,obj_client.connect_id).game_score)
