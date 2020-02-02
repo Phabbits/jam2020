@@ -28,10 +28,6 @@ if tile != noone {
 }
 
 //update to and from
-for (var i = 0; i < 4; i ++){
-	if i != from {
-		if tile.path[i]{
-			to = i
 if tile != noone {
 	for (var i = 0; i < 4; i ++){
 		if i != from{
