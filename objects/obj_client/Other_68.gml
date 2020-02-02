@@ -87,9 +87,11 @@ if(client == eventid) {
 							var player_amount = buffer_read(buff, buffer_u8)
 							for (var i = 0; i < player_amount; i ++){
 								var ID = buffer_read(buff, buffer_u8)
+								var name = buffer_read(buff, buffer_string)
 								
 								if (ds_list_find_index(network_players, ID) == -1){
 									ds_list_add(network_players, ID)
+									ds_list_add(network_names, name)
 									//show_debug_message("hhsafs" + string(ds_list_find_index(network_players, ID)))
 								}
 							}
@@ -115,6 +117,28 @@ if(client == eventid) {
                                 var cameraX = buffer_read(buff, buffer_s16);
                                 var cameraY = buffer_read(buff, buffer_s16);
 								
+								//Write all players
+								var count = buffer_read(buff, buffer_u8)
+								// check for clients to send confirmations
+								for (i = 0; i < count; i++) { 
+									var player = ds_list_find_value(obj_menu.game_players, i)
+									//Train speed
+								    player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+									//Repair list
+									//ds_list_clear(player.repair_list)
+									var repair_amount = buffer_read(buff, buffer_u8)
+									for (var j = 0; j < repair_amount; j++) {
+										cx = buffer_read(buff, buffer_u16)
+										cy = buffer_read(buff, buffer_u16)
+										var crack = instance_position(cx, cy, obj_cracks)
+										if instance_exists(crack) {
+											if ds_list_find_index(player.repair_list, crack) == -1{
+												ds_list_add(player.repair_list, crack)
+											}
+										}
+								    }
+								}
+		
 								//Update tiles
 								var tile_amount = buffer_read(buff, buffer_u8)
 								for (var i = 0; i < tile_amount; i ++){

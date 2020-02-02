@@ -1,3 +1,3 @@
 /// @description 
 
-Train.move_speed = .4
+Train.move_speed = .5
