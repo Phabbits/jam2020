@@ -34,8 +34,9 @@ if (state == STATE_LOBBY) {
             draw_rectangle(32, 62 + bh*i / attributes, room_width-32, 62+bh+bh*i / attributes, false);
 			draw_set_color(c_black)
 //            draw_text(48+sw, 40 + bh*i / attributes, string_hash_to_newline("Team " + string(ds_list_find_value(server_data, i))));
-            draw_text(210+sw, 65 + bh*i / attributes, string_hash_to_newline("Ready: " + string(ds_list_find_value(server_data, i + 0))));
-            draw_text(450+sw, 65 + bh*i / attributes, string_hash_to_newline("Name: " + string(ds_list_find_value(server_data, i + 1))));
+            draw_text(16+sw, 65 + bh*i / attributes, string_hash_to_newline("Ready: " + string(ds_list_find_value(server_data, i + 0))));
+            draw_text(220+sw, 65 + bh*i / attributes, string_hash_to_newline("Name: " + string(ds_list_find_value(server_data, i + 1))));
+			draw_text(600+sw, 65 + bh*i / attributes, string_hash_to_newline("Colour: " + scr_colour_string(i)));
 //            draw_text(400+2*sw, 40 + bh*i / attributes, string_hash_to_newline("Character: " + ds_list_find_value(server_data, i + 3)));
 //            draw_sprite(spr_lobby, 0, 48, 46 + bh*i / attributes);
 //            draw_sprite(spr_lobby, 1, 426, 46 + bh*i / attributes);

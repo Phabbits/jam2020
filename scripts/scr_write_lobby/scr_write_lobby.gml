@@ -36,6 +36,7 @@
 	    var inst = ds_map_find_value(Clients, ip);
     
 	    buffer_write(buff, buffer_u8, inst.connectID)
+		buffer_write(buff, buffer_string, inst.name)
 	    }
     
     //total number of players
