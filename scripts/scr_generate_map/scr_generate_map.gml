@@ -3,7 +3,7 @@
 // Returns null
 
 var w = room_width - 32
-var h = room_height - 32
+var h = room_height - 64
 var s = 32
 
 for (var xx = 32 + s/2; xx < w; xx += s){
