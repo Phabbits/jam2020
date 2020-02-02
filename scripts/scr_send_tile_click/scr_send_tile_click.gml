@@ -18,10 +18,11 @@ with obj_client {
     // write command
     buffer_write(buff, buffer_u8, TILE_CMD);
     
-    // write tile id
-    buffer_write(buff, buffer_u32, input);
+    // write tile grid position
+    buffer_write(buff, buffer_u16, input.x);
+	buffer_write(buff, buffer_u16, input.y);
 
     // Send this to the server
     network_send_udp(client,ip,port,buff,buffer_tell(buff));
-	//show_debug_message("Send tile click" + string(input))
+	show_debug_message("Send tile click" + string(input) + " " + string(input.x) + " " + string(input.y))
 }

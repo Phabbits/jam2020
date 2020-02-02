@@ -132,9 +132,12 @@ if(client == eventid) {
 								//Update tiles
 								var tile_amount = buffer_read(buff, buffer_u8)
 								for (var i = 0; i < tile_amount; i ++){
-									var tile = buffer_read(buff, buffer_u32)
+									var xx = buffer_read(buff, buffer_u16)
+									var yy = buffer_read(buff, buffer_u16)
+									var tile = instance_position(xx, yy, obj_track)
 									tile.image_index = buffer_read(buff, buffer_u8)
 									tile.alarm[0] = 1
+									show_debug_message(string(tile) + " " + string(tile.image_index))
 								}
                                 
                                 // temporarily hold server data, local because it will be called a lot of times

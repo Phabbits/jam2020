@@ -34,8 +34,10 @@
 		buffer_write(buff, buffer_u8, am)
 		for (var i = 0; i < am; i ++){
 			var tile = ds_list_find_value(tiles, i)
-			buffer_write(buff, buffer_u32, tile)
-			buffer_write(buff, buffer_u8, tile.image_index)
+			buffer_write(buff, buffer_u16, tile.x)
+			buffer_write(buff, buffer_u16, tile.y)
+			buffer_write(buff, buffer_u8, get_track_image(tile.image_index))
+			show_debug_message(get_track_image(tile.image_index))
 		}
 		//Empty the list
 		ds_list_clear(tiles)
