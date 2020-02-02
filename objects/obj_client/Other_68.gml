@@ -132,7 +132,8 @@ if(client == eventid) {
 										buffer_read(buff, buffer_u8)
 									}
 									else{
-										player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+										//player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+										buffer_read(buff, buffer_u8)
 									}
 									//Repair list
 									//ds_list_clear(player.repair_list)

@@ -16,7 +16,8 @@ for (var i = 0; i < ds_list_size(global.Menu.game_players); i++){
 		won = true
 		winner = ds_list_find_value(obj_client.network_names,i)
 		instance_create_layer(0,0,"Instances",obj_score_control)
-		instance_create_layer(290,483,"Instances_1",obj_quit_btn)
+		instance_create_layer(150,483,"Instances_1",obj_quit_btn)
+		instance_create_layer(430,483,"Instances_1",obj_rest_btn)
 		instance_destroy(obj_cracks)
 		instance_destroy(obj_score)
 		instance_destroy(obj_repairman)

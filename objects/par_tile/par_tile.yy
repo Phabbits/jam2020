@@ -1,14 +1,14 @@
 {
-    "id": "200906d0-3928-4734-bf58-b4ffe766c60c",
+    "id": "02d1fdb8-6847-4c06-a129-25ec57bb1b94",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_rock",
+    "name": "par_tile",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "02d1fdb8-6847-4c06-a129-25ec57bb1b94",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "7ce4df73-c412-424e-9de6-2c163a1e1173",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
