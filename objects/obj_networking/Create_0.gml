@@ -12,10 +12,10 @@ servernames = ds_list_create();
 // Create a server and listen on our broadcast port....
 broadcast_server = network_create_server(network_socket_udp, 6511, 100);
 // set up menu
-directIP = instance_create_layer(154+32+64, room_height-120, "Instances", obj_input);
-directIP.title = "Enter Direct IP"
-directIP.text = "192.168.1.1"
-iServerName = instance_create_layer(room_width-(200+154+32+64), room_height-120, "Instances", obj_input);
+directIP = instance_create_layer(room_width/2-10, room_height-90, "Instances", obj_input);
+directIP.title = " "
+directIP.text = "Enter Direct IP"
+iServerName = instance_create_layer(room_width/2, room_height/2, "Instances", obj_input);
 iServerName.title = "Player Name";
 iServerName.text = "Newbius";
 
