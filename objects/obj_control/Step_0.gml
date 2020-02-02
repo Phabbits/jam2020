@@ -20,8 +20,12 @@ for (var i = 0; i < ds_list_size(global.Menu.game_players); i++){
 		instance_destroy(obj_cracks)
 		instance_destroy(obj_score)
 		instance_destroy(obj_repairman)
-		obj_train.visible = false
-		obj_train.move_speed = 0
+		with obj_train{
+			visible = false
+		}
+		with obj_train{
+			move_speed = 0
+		}
 		//instance_destroy(obj_control)
 	}
 }
