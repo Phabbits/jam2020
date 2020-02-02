@@ -346,7 +346,7 @@
             "Key": "4aaf171a-e525-4097-a812-44d179a793b2",
             "Value": {
                 "id": "1efc4248-c1a7-4cee-8fde-14cbb0832eb9",
-                "resourcePath": "sprites\\sprite21\\sprite21.yy",
+                "resourcePath": "sprites\\spr_blank\\spr_blank.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -612,6 +612,14 @@
                 "id": "c6e34d9e-ca8e-4feb-b6c9-27d87d71f419",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ab1c3caa-0a9c-4a62-beea-c50e96f1ce52",
+            "Value": {
+                "id": "d72578c1-bc4c-44c6-9f5d-36c15ee46daa",
+                "resourcePath": "objects\\obj_blank\\obj_blank.yy",
+                "resourceType": "GMObject"
             }
         },
         {

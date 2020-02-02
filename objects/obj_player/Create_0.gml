@@ -18,6 +18,7 @@ trains = 3
 connect_id = -1
 
 //Lay the starting rails
+
 for (var i = 0; i < 4; i ++) {
 	var tile = instance_position(x + 32*i, y, obj_track)
 	if instance_exists(tile){
@@ -32,5 +33,5 @@ for (var i = 0; i < 4; i ++) {
 		instance_create_layer(x + 32*i, y, "Instances", obj_track)
 	}
 }
-	
+instance_create_layer(x, y, "Instances", obj_blank)
 
