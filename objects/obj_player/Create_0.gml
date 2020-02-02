@@ -35,3 +35,4 @@ for (var i = 0; i < 4; i ++) {
 }
 instance_create_layer(x, y, "Instances", obj_blank)
 
+alarm[0] = 1
