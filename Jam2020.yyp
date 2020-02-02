@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "c4713080-6293-4200-9687-612a8a90d8d9",
+            "Value": {
+                "id": "b50293ba-1233-46ae-b53f-74c7f5187ef9",
+                "resourcePath": "sprites\\spr_depot\\spr_depot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c48a7a3c-75ac-4c6f-b195-cde0624afc8a",
             "Value": {
                 "id": "5a07d5a9-28cf-48af-845b-9e360762091f",
