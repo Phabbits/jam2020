@@ -1,4 +1,5 @@
 /// @description Draw server list
+/*
 draw_set_font(fnt_basic);
 draw_set_color(c_white);
 draw_set_halign(fa_left);
@@ -12,3 +13,4 @@ for(var i=0;i<count;i++){
     yindex+=30;
 }
 
+*/
