@@ -19,6 +19,7 @@
     
     //write packet sequence
     buffer_write(buff, buffer_u8, 0);//sequenceOut); Written in send buffer
+	buffer_write(buff, buffer_u8, 0);//connectID); Written in send buffer
     
     //state
     buffer_write(buff, buffer_u8, STATE_GAME);
