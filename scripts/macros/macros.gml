@@ -10,8 +10,11 @@
 #macro LEFTSELC_KEY 6
 #macro RIGHTSELC_KEY 7
 #macro KEY_TYPE 8
+
 #macro INPUT_CMD 0
 #macro PING_CMD 1
+#macro TILE_CMD 2
+
 #macro KEY_PRESSED 2
 #macro KEY_ISPRESSED 1
 #macro KEY_ISRELEASED 0

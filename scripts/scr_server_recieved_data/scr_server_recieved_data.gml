@@ -37,6 +37,13 @@
 	            inst.mouseX = buffer_read(buff, buffer_u16);
 	            inst.mouseY = buffer_read(buff, buffer_u16);
                 break;
+			case TILE_CMD:
+				//Everything is with respect to obj_server
+				var xx = buffer_read(buff, buffer_u16)
+				var yy = buffer_read(buff, buffer_u16)
+	            ds_list_add(tiles, instance_position(xx, yy, obj_track))
+				show_debug_message("Recieve tile click" + string(ds_list_find_value(tiles, ds_list_size(tiles)-1)) + " " + string(xx) + " " + string(yy))
+                break;
             case PING_CMD:
                 // client message, confirm login
                 ds_map_replace(clientMessages, ip, SERVER_PLAY);  

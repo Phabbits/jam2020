@@ -35,3 +35,6 @@ instance_create_layer(736, 832, "Instances", obj_quit_btn)
 //Create direct button
 instance_create_layer(300, 832, "Instances", obj_direct_btn)
 
+// try to load player name
+scr_load_player();
+

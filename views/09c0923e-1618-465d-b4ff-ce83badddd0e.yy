@@ -8,6 +8,7 @@
         "90dec00e-0334-4fcf-94f3-03c993249bca",
         "27bc569b-1de9-4e03-82ab-bbe0746d442e",
         "0f9fe104-c181-49ce-89af-f5cdb309360e",
+        "85f0e95b-1a91-4436-bb64-2951de0e23f8",
         "6a4d93db-cd7e-4c0f-ac55-9c6968860b02",
         "5df394be-d1fa-4610-ab25-ee1724dbcb44",
         "48328041-742e-4b11-8b92-a492de9c8287",
@@ -24,7 +25,10 @@
         "13ce9d38-3c27-4b9d-85f5-2a82f3bfa624",
         "7c488e02-296d-4e9c-a582-13824cb85412",
         "44a56d41-3189-45ed-a006-6df8f0830036",
-        "28c91fce-65ff-43d1-880e-764c6f4a7301"
+        "28c91fce-65ff-43d1-880e-764c6f4a7301",
+        "0610a1d8-32ff-44d6-a20b-ae86a8ee954a",
+        "73467cd1-15ef-4457-9caa-654a7943dafe",
+        "fb648b52-66b9-452b-8a3b-eed6224274a1"
     ],
     "filterType": "GMScript",
     "folderName": "networking",
