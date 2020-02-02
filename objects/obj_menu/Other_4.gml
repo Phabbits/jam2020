@@ -7,6 +7,7 @@ if global.Menu.state = STATE_GAME{
 	for (var i = 0; i < players; i ++){
 		var player = instance_create_layer(16, spacing*(i+1)-16, "Instances", obj_player)
 		player.connect_id = ds_list_find_value(obj_client.network_players, i)
+		ds_list_add(game_players, player)
 	}
 }
 
