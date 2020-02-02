@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1ccec2a0-e91c-47ae-bd59-37b9a8b8ebe5",
+            "Value": {
+                "id": "624330cd-27b3-4fd6-84be-7a4739d2f758",
+                "resourcePath": "sprites\\spr_direct_btn\\spr_direct_btn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "25fa5519-fc07-49a0-ad4c-fd5f27f3dcb9",
             "Value": {
                 "id": "20eb0522-abee-4dc7-bcda-1156f22f4551",
@@ -615,11 +623,27 @@
             }
         },
         {
+            "Key": "cc9c3598-a1cf-4a32-b488-cb9cbfe5cbd6",
+            "Value": {
+                "id": "eb62c9e2-7ffa-4785-ac19-95730643fb06",
+                "resourcePath": "objects\\obj_host_btn\\obj_host_btn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d18ed447-3d65-4c08-941a-21afbc068667",
             "Value": {
                 "id": "dbf88e33-06c4-439c-a90e-8a35ab1e854d",
                 "resourcePath": "scripts\\scr_increment_in_bounds\\scr_increment_in_bounds.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d54c11d8-7bc0-4822-a0b6-db4ec6cfaba4",
+            "Value": {
+                "id": "1ec6b1bc-180a-4714-a3b8-25ce061fc856",
+                "resourcePath": "objects\\obj_direct_btn\\obj_direct_btn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
