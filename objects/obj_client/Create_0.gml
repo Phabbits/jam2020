@@ -60,6 +60,6 @@ socketIn = -1;
 serverIP = -1;
 
 network_players = ds_list_create()
-show_debug_message("nope" + string(ds_list_find_index(network_players, 0)))
+network_names = ds_list_create()
 connect_id = -1
 
