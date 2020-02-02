@@ -4,8 +4,8 @@ switch (action){
 		keyboard_string = text;
 		break;
 	case "host":
-		room_goto_next()
-		//global.Networking.alarm[1] = 1;
+		//room_goto_next()
+		global.Networking.alarm[1] = 1;
 		break;
 }
 

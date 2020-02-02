@@ -19,8 +19,7 @@ else {
     show_debug_message("#######################################");
     
     // switch menu to the lobby
-    //scr_state_switch(STATE_ONLINE, STATE_LOBBY);
-    room_goto_next()
+    scr_state_switch(STATE_ONLINE, STATE_LOBBY);
     // create client
     instance_create_layer(0, 0, "lay_instances", obj_client);
     // client takes care of all networking now

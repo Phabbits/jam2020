@@ -28,6 +28,9 @@
         // put this instance into a map, using the ip as the lookup
         ds_map_add(Clients, ip, inst);
         
+		var playerIndex = inst.connectID;
+		ds_list_insert(global.Menu.names, playerIndex, ""); //To be replaced when logging in
+		
         // send confirmation message to client
         ds_map_add(clientMessages, ip, SERVER_CONNECT);
         }
