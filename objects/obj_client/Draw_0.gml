@@ -36,3 +36,4 @@ if (view_current == 0) {
         }
     }
 
+draw_set_alpha(1);

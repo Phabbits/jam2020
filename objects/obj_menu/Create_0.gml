@@ -6,7 +6,7 @@ global.Menu = self
 global.online = true
 
 //set fullscreen
-//window_set_fullscreen(true)
+window_set_fullscreen(true)
 
 buttons = ds_list_create(); //holds menu buttons
 selected = 0; //selected button
