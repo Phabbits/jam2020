@@ -51,3 +51,6 @@ sendBuffer = 0;
 
 // serverDebug - whether or not to draw server debug information
 serverDebug = false;
+
+//tiles - list of all tiles that have been clicked, reset often
+tiles = ds_list_create()

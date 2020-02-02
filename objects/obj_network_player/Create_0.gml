@@ -47,6 +47,7 @@ dropBuffer = 60;
 /// join lobby
 
 // join the client into the lobby
+show_debug_message("Call scr_join_lobby")
 scr_join_lobby(other);
 
 /// debug

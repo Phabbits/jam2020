@@ -64,7 +64,7 @@
                 break;
             case STATE_GAME:
                 // write the game information to the sending buffer
-//                scr_write_game();
+                scr_write_game();
                 
                 // check for clients to send information
                 for (i = 0; i < count; i++) { 
