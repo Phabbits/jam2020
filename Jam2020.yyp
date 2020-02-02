@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "68fd9bb1-ba12-479f-84ae-eb40a0747d45",
+            "Value": {
+                "id": "224df1bf-5405-40c9-8487-798b2ebe803d",
+                "resourcePath": "sounds\\msc_game\\msc_game.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "6a4d93db-cd7e-4c0f-ac55-9c6968860b02",
             "Value": {
                 "id": "74c41c56-d9cf-49bd-bfcc-ea188b0d1ad0",
@@ -452,6 +460,22 @@
                 "id": "e63e6bc8-5f1f-4642-81b2-0d8df630aef4",
                 "resourcePath": "sprites\\spr_input\\spr_input.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "70924e3a-a223-467d-9983-3218762fb9dc",
+            "Value": {
+                "id": "7280fbb3-0844-40c2-a1d5-9be7cb90f4fa",
+                "resourcePath": "sounds\\msc_menu\\msc_menu.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "71b19110-e291-4572-8ba5-2b8020f974cb",
+            "Value": {
+                "id": "eade1c79-9d37-4d38-9430-213e4f268300",
+                "resourcePath": "sounds\\snd_mouseclick\\snd_mouseclick.yy",
+                "resourceType": "GMSound"
             }
         },
         {
