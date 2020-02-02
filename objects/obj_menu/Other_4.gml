@@ -11,9 +11,10 @@ if global.Menu.state = STATE_GAME{
 }
 
 if room = rm_networking or room = rm_lobby {
+	audio_stop_all()
 	audio_play_sound(msc_menu, 1, 1)
 }
 if room = rm_main {
 	audio_stop_all()
-	audio_play_sound(msc_menu, 1, 1)
+	audio_play_sound(msc_game, 1, 1)
 }
