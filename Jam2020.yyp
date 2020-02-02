@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "710ebd5b-a8a6-4318-86ec-e87ba61aa970",
+            "Value": {
+                "id": "20694a79-7d31-4e12-911f-66307db3a60b",
+                "resourcePath": "sprites\\spr_train_car_univ\\spr_train_car_univ.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71b19110-e291-4572-8ba5-2b8020f974cb",
             "Value": {
                 "id": "eade1c79-9d37-4d38-9430-213e4f268300",
