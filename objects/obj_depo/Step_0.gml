@@ -6,7 +6,10 @@ if distance_to_object(train) < 64{
 	train.player.game_score += ds_list_size(train.cart_list)
 	for (var i = 0; i < ds_list_size(train.cart_list); i++){
 		audio_play_sound(snd_cash, 1, 0)
-		instance_destroy(ds_list_find_value(train.cart_list,i))
+		var cart = ds_list_find_value(train.cart_list,i)
+		instance_create_layer(cart.x,cart.y,"Instances_1",obj_coin)
+		instance_destroy(cart)
 	}
 	ds_list_clear(train.cart_list)
+	
 }
