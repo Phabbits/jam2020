@@ -117,6 +117,15 @@ if(client == eventid) {
                                 var cameraX = buffer_read(buff, buffer_s16);
                                 var cameraY = buffer_read(buff, buffer_s16);
 								
+								//Write all players
+								var count = buffer_read(buff, buffer_u8)
+								// check for clients to send confirmations
+								for (i = 0; i < count; i++) { 
+									var player = ds_list_find_value(obj_menu.game_players, i)
+									//Train speed
+								    player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+								    }
+		
 								//Update tiles
 								var tile_amount = buffer_read(buff, buffer_u8)
 								for (var i = 0; i < tile_amount; i ++){

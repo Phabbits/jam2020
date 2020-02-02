@@ -33,9 +33,9 @@
 	buffer_write(buff, buffer_u8, count)
 	// check for clients to send confirmations
 	for (i = 0; i < count; i++) { 
-		var player = 
+		var player = ds_list_find_value(obj_menu.game_players, i)
 		//Train speed
-	    buffer_write(buff, buffer_u8, inst.connectID)
+	    buffer_write(buff, buffer_u8, player.Train.move_speed*10)
 	    }
 		
 	//Check all tile clicks
