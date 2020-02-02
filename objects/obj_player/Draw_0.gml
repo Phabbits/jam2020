@@ -30,5 +30,5 @@ if connect_id == obj_client.connect_id{
 }
 draw_set_font(fnt_basic)
 draw_set_color(color)
-draw_text(30+(25*connect_id),room_height-50,name)
+draw_text(30+(50*connect_id),room_height-50,name)
 draw_set_color(c_white)
