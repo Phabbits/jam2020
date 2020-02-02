@@ -21,7 +21,7 @@ if from == 3{
 
 var cart = instance_create_layer(xx,yy,"Instances",obj_cart)
 
-cart.to = to//scr_find_to(from)
+cart.to = scr_find_to(from)
 
 var tile = instance_position(xx,yy,obj_track)
 
@@ -34,6 +34,7 @@ if tile != noone {
 		}
 	}
 }
-event_user(0)
+
+with(cart) event_user(0)
 
 return cart
