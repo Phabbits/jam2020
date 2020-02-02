@@ -11,4 +11,3 @@ event_user(0)
 with instance_place (x, y, obj_track) {
 	other.image_angle = image_index * 90
 }
-
