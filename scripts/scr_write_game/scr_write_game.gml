@@ -19,6 +19,7 @@
     
     //write packet sequence
     buffer_write(buff, buffer_u8, 0);//sequenceOut); Written in send buffer
+	buffer_write(buff, buffer_u8, 0);//connectID); Written in send buffer
     
     //state
     buffer_write(buff, buffer_u8, STATE_GAME);
@@ -36,11 +37,12 @@
 			var tile = ds_list_find_value(tiles, i)
 			buffer_write(buff, buffer_u16, tile.x)
 			buffer_write(buff, buffer_u16, tile.y)
-			buffer_write(buff, buffer_u8, get_track_image(tile.image_index))
-			show_debug_message(get_track_image(tile.image_index))
+			buffer_write(buff, buffer_u8, get_track_image(tile.image_index, ds_list_find_value(tile_change_types, i)))
+			show_debug_message(get_track_image(tile.image_index, ds_list_find_value(tile_change_types, i)))
 		}
 		//Empty the list
 		ds_list_clear(tiles)
+		ds_list_clear(tile_change_types)
 	}
 	else{
 		//Send amount of tile

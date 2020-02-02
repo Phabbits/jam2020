@@ -19,9 +19,24 @@
     
     //write packet sequence
     buffer_write(buff, buffer_u8, 0);//sequenceOut); Written in send buffer
+	buffer_write(buff, buffer_u8, 0);//connectID); Written in send buffer
     
     //state
     buffer_write(buff, buffer_u8, STATE_LOBBY);
+	
+	//Write all players
+	var count = ds_list_size(iplist); // get the amount of clients connected
+	buffer_write(buff, buffer_u8, count)
+	// check for clients to send confirmations
+	for (i = 0; i < count; i++) { 
+	    //get the ip of the client to get the message
+	    var ip = ds_list_find_value(iplist, i);
+    
+	    // get the network player
+	    var inst = ds_map_find_value(Clients, ip);
+    
+	    buffer_write(buff, buffer_u8, inst.connectID)
+	    }
     
     //total number of players
     buffer_write(buff, buffer_u8, ds_list_size(global.Menu.players)); //buffer_u8 MAX: 255

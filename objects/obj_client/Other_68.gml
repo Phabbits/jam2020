@@ -69,6 +69,7 @@ if(client == eventid) {
             if (msgId == SERVER_PLAY) { //server message, low priority
                 //read sequence
                 var sequence = buffer_read(buff, buffer_u8);
+				var connect_id = buffer_read(buff, buffer_u8);
                 if (scr_sequence_more_recent(sequence, sequenceIn, SEQUENCE_MAX)) { //this package is newer and therefore requires an update, 65,535 is for buffer_u16
                     //update sequenceIn
                     sequenceIn = sequence;
@@ -82,6 +83,17 @@ if(client == eventid) {
                         case STATE_LOBBY: // lobby
                             // lobby updates
                             
+							//Get player list
+							var player_amount = buffer_read(buff, buffer_u8)
+							for (var i = 0; i < player_amount; i ++){
+								var ID = buffer_read(buff, buffer_u8)
+								
+								if (ds_list_find_index(network_players, ID) == -1){
+									ds_list_add(network_players, ID)
+									//show_debug_message("hhsafs" + string(ds_list_find_index(network_players, ID)))
+								}
+							}
+								
                             // get the amount of players
                             var players = buffer_read(buff,buffer_u8);
                             // temporarily hold server data, local because it will be called a lot of times
@@ -95,32 +107,6 @@ if(client == eventid) {
                             ds_list_copy(global.Menu.server_data, server_data);
                             // delete temporary list
                             ds_list_destroy(server_data);
-                            break;
-                        case STATE_PATHS: // paths menu
-                            // path updates
-                            if (global.Menu.state == STATE_PATHS) {
-                                // get the amount of paths
-                                var paths = buffer_read(buff, buffer_u8);
-                                
-                                // temporarily hold server data, local because it will be called a lot of times
-                                server_data = ds_list_create();
-                                ds_list_add(server_data, buffer_read(buff,buffer_u8));   // selected path
-                                // read the data
-                                for(var i = 0; i < paths; i++){
-                                    ds_list_add(server_data, buffer_read(buff,buffer_string));   // name
-                                    ds_list_add(server_data, buffer_read(buff,buffer_string));   // score
-                                    ds_list_add(server_data, buffer_read(buff,buffer_string));   // length
-                                    }
-                                // copy loaded data to menu
-                                ds_list_copy(global.Menu.server_data, server_data);
-                                // delete temporary list
-                                ds_list_destroy(server_data);
-                                }
-                            else {
-                                // switch to path menu
-//                                scr_state_switch(STATE_LOBBY, STATE_PATHS);
-								//with (global.Menu) event_user(1);
-                                }
                             break;
                         case STATE_GAME:
                             // game updates

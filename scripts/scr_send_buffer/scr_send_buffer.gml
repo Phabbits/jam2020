@@ -24,6 +24,7 @@ inst.socketOut = socket;
 buffer_seek(buffer, buffer_seek_start, 1);
 var sequenceOut = sequenceOuts[| index];
 buffer_write(buffer, buffer_u8, sequenceOut);
+buffer_write(buffer, buffer_u8, inst.connectID);
 buffer_seek(buffer, buffer_seek_end, 0);
 sequenceOuts[| index] = scr_increment_in_bounds(sequenceOut, 1, 0, SEQUENCE_MAX, true);
 
