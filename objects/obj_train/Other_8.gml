@@ -16,6 +16,7 @@ if cracks.image_index = 3 {
 	player.trains -= 1
 	instance_create_layer(x,y,"Instances_1",obj_explosion)
 	instance_destroy (self)
+}
 if instance_exists(cracks){
 	if cracks.image_index = 3 {
 		player.trains -= 1
@@ -31,7 +32,7 @@ else if tile.path[from] != 1 {
 
 //update to and from
 for (var i = 0; i < 4; i ++){
-	if i != from{
+	if i != from {
 		if tile.path[i]{
 			to = i
 		}
