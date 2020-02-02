@@ -10,3 +10,7 @@ ds_list_destroy(servernames);
 
 // destroy broadcast
 network_destroy(broadcast_server);
+
+// save player name
+scr_save_player();
+
