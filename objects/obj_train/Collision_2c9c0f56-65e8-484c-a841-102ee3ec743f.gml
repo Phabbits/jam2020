@@ -3,4 +3,5 @@
 
 instance_destroy(other)
 audio_play_sound(snd_coin, 1, 0)
-player.game_score ++;
+instance_create_layer()
+ds_list_add(cart_list,other);
