@@ -21,6 +21,7 @@ with obj_client {
     // write tile grid position
     buffer_write(buff, buffer_u16, input.x);
 	buffer_write(buff, buffer_u16, input.y);
+	buffer_write(buff, buffer_u8, argument1)
 
     // Send this to the server
     network_send_udp(client,ip,port,buff,buffer_tell(buff));
