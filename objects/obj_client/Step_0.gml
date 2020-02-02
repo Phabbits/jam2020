@@ -46,7 +46,9 @@ switch(global.NetworkState) {
         break;
     case(NETWORK_PLAY): //game is running
         scr_send_keep_alive();
-        
+        if global.Menu.state = STATE_GAME{
+			scr_send_update()
+		}
         //break
         break;
     }
