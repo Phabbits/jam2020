@@ -24,12 +24,14 @@ if (state == STATE_LOBBY) {
     with (global.Menu) scr_join_lobby(other);
     }
 
+/*
 if (state == STATE_GAME) {
     // delete character
     if (instance_exists(gameCharacter))
         instance_destroy(gameCharacter);
     }
-    
+    */
+/*
 if (state == STATE_GAME or state == STATE_SCORE) {
     // remove from team
     var index = ds_list_find_index(Team.players, self);
@@ -40,6 +42,7 @@ if (state == STATE_GAME or state == STATE_SCORE) {
         instance_destroy(Team);
         }
     }
+*/
 
 // destory self
 instance_destroy();
