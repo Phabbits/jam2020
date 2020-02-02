@@ -6,4 +6,8 @@ audio_play_sound(snd_explosion, 1, 0)
 player.Train = instance_create_layer(player.x,player.y,"Instances_1",obj_train)
 player.Train.player = player;
 
+<<<<<<< HEAD
 player.game_score --
+=======
+player.game_score = 0
+>>>>>>> parent of cdc2706... Merge pull request #23 from Phabbits/Phabbits
