@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "10fd4c9a-2f8d-4f69-992b-188787db426c",
+            "Value": {
+                "id": "104eed5c-ec9e-4cf4-b800-618022e3e3c4",
+                "resourcePath": "sprites\\spr_train_car_side\\spr_train_car_side.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12dc5b45-83bc-40f6-a141-2f05fbde6087",
             "Value": {
                 "id": "c73eb1d3-fb18-4fcf-920e-4f30e659b54a",
