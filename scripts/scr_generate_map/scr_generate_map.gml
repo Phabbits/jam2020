@@ -15,7 +15,7 @@ for (var xx = 32 + s/2; xx < w; xx += s){
 					image_index = irandom (5);
 				}
 			}else{
-				if irandom (1) > .5{
+				if irandom (20) > 1{
 					with instance_create_layer(xx, yy, "lay_base", obj_rock){
 						image_index = 0
 					}
