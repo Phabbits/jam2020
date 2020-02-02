@@ -20,7 +20,7 @@ for (var xx = 32 + s/2; xx < w; xx += s){
 						image_index = 0
 					}
 				}else{
-					with instance_create_layer(xx,yy,"lay_base", obj_depo){
+					with instance_create_layer(xx,yy,"lay_base", obj_depot){
 						image_index = 0
 						with instance_place(xx+32,yy,obj_track){
 							instance_destroy(obj_track)	
