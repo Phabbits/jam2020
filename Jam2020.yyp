@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "702775b1-9e46-4fad-aa08-1b92a269d608",
+            "Value": {
+                "id": "2cf2c064-3d54-496b-8b93-323429524045",
+                "resourcePath": "objects\\par_train\\par_train.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "706508ff-09c8-4524-88b7-eacc14f1c78d",
             "Value": {
                 "id": "e63e6bc8-5f1f-4642-81b2-0d8df630aef4",
