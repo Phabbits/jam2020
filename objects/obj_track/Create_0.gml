@@ -1,7 +1,5 @@
 /// @description
 
-type = image_number;
-broken = false;
 path = [0, 0, 0, 0];
 
 image_speed = 0;
