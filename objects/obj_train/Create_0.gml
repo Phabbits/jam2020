@@ -4,7 +4,7 @@
 
 alarm[0] = 1
 move_speed = .5
-local_move_speed = 0
+local_move_speed = move_speed
 from = 2
 to = 0
 player = -4
