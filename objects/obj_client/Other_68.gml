@@ -69,7 +69,7 @@ if(client == eventid) {
             if (msgId == SERVER_PLAY) { //server message, low priority
                 //read sequence
                 var sequence = buffer_read(buff, buffer_u8);
-				var connect_id = buffer_read(buff, buffer_u8);
+				connect_id = buffer_read(buff, buffer_u8);
                 if (scr_sequence_more_recent(sequence, sequenceIn, SEQUENCE_MAX)) { //this package is newer and therefore requires an update, 65,535 is for buffer_u16
                     //update sequenceIn
                     sequenceIn = sequence;

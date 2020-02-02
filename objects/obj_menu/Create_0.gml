@@ -20,3 +20,20 @@ names = ds_list_create();
 ///Server
 // list to hold data for different menus, lobby
 server_data = ds_list_create();
+
+ColourArray[0] = c_white;
+ColourArray[1] = c_red;
+ColourArray[2] = c_blue;
+ColourArray[3] = c_yellow;
+ColourArray[4] = c_green;
+ColourArray[5] = c_purple;
+ColourArray[6] = c_aqua;
+ColourArray[7] = c_maroon;
+ColourArray[8] = c_orange;
+ColourArray[9] = c_teal;
+ColourArray[10] = c_olive;
+ColourArray[11] = c_ltgray;
+ColourArray[12] = c_dkgray;
+ColourArray[13] = c_navy;
+ColourArray[14] = $ff8080;
+ColourArray[15] = $80ff80;

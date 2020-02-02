@@ -2,7 +2,7 @@
     "id": "920e32ef-1e77-4c21-937e-4cb22bf419cb",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_train_red",
+    "name": "spr_train_univ",
     "For3D": false,
     "HTile": false,
     "VTile": false,
