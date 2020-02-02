@@ -12,11 +12,6 @@ if tile = noone {
 	instance_create_layer(x,y,"Instances_1",obj_explosion)
 	instance_destroy (self)
 }
-if cracks.image_index = 3 {
-	player.trains -= 1
-	instance_create_layer(x,y,"Instances_1",obj_explosion)
-	instance_destroy (self)
-}
 if instance_exists(cracks){
 	if cracks.image_index = 4 {
 		player.trains -= 1
