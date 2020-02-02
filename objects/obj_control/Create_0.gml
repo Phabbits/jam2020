@@ -17,4 +17,4 @@ coin_buffer_min = 120
 alarm[1] = irandom_range(coin_buffer_min, coin_buffer_max)
 
 //set fullscreen
-window_set_fullscreen(true)
+//window_set_fullscreen(true)
