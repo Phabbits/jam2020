@@ -13,6 +13,7 @@ Repair = instance_create_layer(x, y, "Instances", obj_repairman)
 Repair.player = self;
 
 trains = 3
+sound = snd_horn1
 
 //Networking
 connect_id = -1
