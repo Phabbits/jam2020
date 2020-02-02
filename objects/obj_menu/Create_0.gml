@@ -22,7 +22,7 @@ game_players = ds_list_create();
 // list to hold data for different menus, lobby
 server_data = ds_list_create();
 
-ColourArray[0] = c_white;
+ColourArray[0] = $80ff80;
 ColourArray[1] = c_red;
 ColourArray[2] = c_blue;
 ColourArray[3] = c_yellow;
@@ -37,4 +37,4 @@ ColourArray[11] = c_ltgray;
 ColourArray[12] = c_dkgray;
 ColourArray[13] = c_navy;
 ColourArray[14] = $ff8080;
-ColourArray[15] = $80ff80;
+ColourArray[15] = c_white;

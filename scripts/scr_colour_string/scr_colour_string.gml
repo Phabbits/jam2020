@@ -6,7 +6,7 @@ var col = argument0
 
 switch col{
 	case 0:
-		return "White"
+		return "Lime"
 		break;
 	case 1:
 		return "Red"
