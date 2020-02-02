@@ -32,3 +32,21 @@ if tile != noone {
 	}
 }
 event_user(0)
+
+//check for cart
+with(instance_place(x, y, obj_score)){
+	with(other){
+	audio_play_sound(snd_coin, 1, 0)
+
+var cart = -1
+if ds_list_empty(cart_list){
+	cart = scr_add_cart(x,y,to,from)
+}else{
+	var caboose = ds_list_find_value(cart_list,ds_list_size(cart_list)-1)
+	cart = scr_add_cart(caboose.x,caboose.y,caboose.to,caboose.from)
+}
+cart.player = player
+ds_list_add(cart_list,cart);
+	}
+instance_destroy()
+}
