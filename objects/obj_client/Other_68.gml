@@ -128,13 +128,14 @@ if(client == eventid) {
                                 // hold space for specific camera x and y
                                 var cameraX = buffer_read(buff, buffer_s16);
                                 var cameraY = buffer_read(buff, buffer_s16);
-								/*
-                                if (cameraX != -1 and cameraY != -1) {
-                                    obj_camera.x = cameraX;
-                                    obj_camera.y = cameraY;
-                                    }
-								*/
-                                
+								
+								//Update tiles
+								var tile_amount = buffer_read(buff, buffer_u8)
+								for (var i = 0; i < tile_amount; i ++){
+									var tile = buffer_read(buff, buffer_u32)
+									tile.image_index = buffer_read(buff, buffer_u8)
+									tile.alarm[0] = 1
+								}
                                 
                                 // temporarily hold server data, local because it will be called a lot of times
                                 server_data = ds_list_create();
@@ -168,9 +169,9 @@ if(client == eventid) {
                                     }
                                 */
                                 }
-                            else if (global.Menu.state == STATE_PATHS) {
+                            else if (global.Menu.state == STATE_LOBBY) {
                                 // switch to game menu
-                                with (global.Menu) event_user(2);
+                                with (global.Menu) scr_state_switch(STATE_LOBBY, STATE_GAME);
                                 }
                             else if (global.Menu.state == STATE_SCORE) {
                                 // switch to game menu

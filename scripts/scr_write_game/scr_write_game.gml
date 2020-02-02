@@ -26,6 +26,24 @@
     // hold space for specific camera x and y
     buffer_write(buff, buffer_s16, 0);
     buffer_write(buff, buffer_s16, 0);
+	
+	//Check all tile clicks
+	if not ds_list_empty(tiles){
+		var am = ds_list_size(tiles)
+		//Send amount of tile
+		buffer_write(buff, buffer_u8, am)
+		for (var i = 0; i < am; i ++){
+			var tile = ds_list_find_value(tiles, i)
+			buffer_write(buff, buffer_u32, tile)
+			buffer_write(buff, buffer_u8, tile.image_index)
+		}
+		//Empty the list
+		ds_list_clear(tiles)
+	}
+	else{
+		//Send amount of tile
+		buffer_write(buff, buffer_u8, 0)
+	}
     
     // delocalize the write buffer
     buffer = buff;
