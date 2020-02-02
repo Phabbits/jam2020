@@ -27,7 +27,7 @@
     // hold space for specific camera x and y
     buffer_write(buff, buffer_s16, 0);
     buffer_write(buff, buffer_s16, 0);
-	/*
+	
 	//Write all players
 	var count = ds_list_size(obj_menu.game_players); // get the amount of clients connected
 	buffer_write(buff, buffer_u8, count)
@@ -37,7 +37,7 @@
 		//Train speed
 	    buffer_write(buff, buffer_u8, player.Train.move_speed*10)
 	    }
-		*/
+	
 	//Check all tile clicks
 	if not ds_list_empty(tiles){
 		var am = ds_list_size(tiles)
