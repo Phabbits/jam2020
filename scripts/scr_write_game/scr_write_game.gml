@@ -36,7 +36,22 @@
 		var player = ds_list_find_value(obj_menu.game_players, i)
 		//Train speed
 	    buffer_write(buff, buffer_u8, player.Train.move_speed*10)
+		//Repair list
+		var repair_amount = ds_list_size(player.repair_list)
+		buffer_write(buff, buffer_u8, repair_amount)
+		for (var j = 0; j < repair_amount; j++) {
+			var crack = ds_list_find_value(player.repair_list,i)
+			if instance_exists(crack){
+				buffer_write(buff, buffer_u16, crack.x)
+				buffer_write(buff, buffer_u16, crack.y)
+			}
+			else{
+				//Add tile that will fail
+				buffer_write(buff, buffer_u16, 0)
+				buffer_write(buff, buffer_u16, 0)
+			}
 	    }
+	}
 	
 	//Check all tile clicks
 	if not ds_list_empty(tiles){

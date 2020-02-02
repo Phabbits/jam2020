@@ -8,9 +8,14 @@ if connect_id == obj_client.connect_id{
 		if not ds_list_empty(repair_list){
 			for (var i = 0; i < ds_list_size(repair_list); i++){
 				var tile = ds_list_find_value(repair_list,i)
-				draw_line_width_color(sx,sy,tile.x,tile.y,3,c_orange,c_orange)
-				sx = tile.x
-				sy = tile.y
+				if instance_exists(tile){
+					draw_line_width_color(sx,sy,tile.x,tile.y,3,c_orange,c_orange)
+					sx = tile.x
+					sy = tile.y
+				}
+				else{
+					ds_list_delete(repair_list,i)
+				}
 			}
 		}
 	}

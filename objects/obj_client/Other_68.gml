@@ -124,7 +124,20 @@ if(client == eventid) {
 									var player = ds_list_find_value(obj_menu.game_players, i)
 									//Train speed
 								    player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+									//Repair list
+									//ds_list_clear(player.repair_list)
+									var repair_amount = buffer_read(buff, buffer_u8)
+									for (var j = 0; j < repair_amount; j++) {
+										cx = buffer_read(buff, buffer_u16)
+										cy = buffer_read(buff, buffer_u16)
+										var crack = instance_position(cx, cy, obj_cracks)
+										if instance_exists(crack) {
+											if ds_list_find_index(player.repair_list, crack) == -1{
+												ds_list_add(player.repair_list, crack)
+											}
+										}
 								    }
+								}
 		
 								//Update tiles
 								var tile_amount = buffer_read(buff, buffer_u8)
