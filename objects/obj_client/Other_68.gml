@@ -127,7 +127,12 @@ if(client == eventid) {
 								for (i = 0; i < count; i++) { 
 									var player = ds_list_find_value(obj_menu.game_players, i)
 									//Train speed
-								    player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+									if global.have_server{
+										buffer_read(buff, buffer_u8)
+									}
+									else{
+										player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+									}
 									//Repair list
 									//ds_list_clear(player.repair_list)
 									var repair_amount = buffer_read(buff, buffer_u8)
