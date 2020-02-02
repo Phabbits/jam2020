@@ -45,6 +45,29 @@
 				ds_list_add(tile_change_types, buffer_read(buff, buffer_u8))
 				show_debug_message("Recieve tile click" + string(ds_list_find_value(tiles, ds_list_size(tiles)-1)) + " " + string(xx) + " " + string(yy))
                 break;
+			case UPDATE_CMD:
+				//Write all players
+				var count = buffer_read(buff, buffer_u8)
+				// check for clients to send confirmations
+				for (i = 0; i < count; i++) { 
+					var player = ds_list_find_value(obj_menu.game_players, i)
+					//Train speed
+					player.Train.move_speed = buffer_read(buff, buffer_u8)/10
+					//Repair list
+					//ds_list_clear(player.repair_list)
+					var repair_amount = buffer_read(buff, buffer_u8)
+					for (var j = 0; j < repair_amount; j++) {
+						cx = buffer_read(buff, buffer_u16)
+						cy = buffer_read(buff, buffer_u16)
+						var crack = instance_position(cx, cy, obj_cracks)
+						if instance_exists(crack) {
+							if ds_list_find_index(player.repair_list, crack) == -1{
+								ds_list_add(player.repair_list, crack)
+							}
+						}
+					}
+				}
+				break;
             case PING_CMD:
                 // client message, confirm login
                 ds_map_replace(clientMessages, ip, SERVER_PLAY);  
