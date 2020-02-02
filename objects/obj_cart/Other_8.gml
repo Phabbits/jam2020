@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited()
+
 from = scr_find_to(to)
 
 tile = instance_position (x, y, obj_track)
