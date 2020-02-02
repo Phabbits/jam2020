@@ -2,6 +2,7 @@
 
 //Direction train is coming from
 
+alarm[0] = 1
 move_speed = .5
 from = 2
 to = 0

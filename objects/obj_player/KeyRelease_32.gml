@@ -1,3 +1,4 @@
 /// @description 
-
-Train.move_speed = .5
+if connect_id = obj_client.connect_id{
+	Train.move_speed = .5
+}
