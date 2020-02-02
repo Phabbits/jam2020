@@ -16,7 +16,7 @@ if (serverDebug) {
     
     // setup drawing
     draw_set_halign(fa_left);
-    draw_set_font(fnt_command);
+    draw_set_font(fnt_basic);
     draw_set_color(c_red);
     
     // draw the amount of players
