@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "d2938268-0a90-427c-8bef-899fdb2eedad",
+            "Value": {
+                "id": "837c8b2b-1b30-4373-8e07-8c95b9983ef0",
+                "resourcePath": "scripts\\get_track_image\\get_track_image.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d54c11d8-7bc0-4822-a0b6-db4ec6cfaba4",
             "Value": {
                 "id": "1ec6b1bc-180a-4714-a3b8-25ce061fc856",
@@ -802,6 +810,7 @@
     "script_order": [
         "ace6a264-0718-4686-a064-91731fa79822",
         "9495be38-1184-4cc7-8b67-7708261d4510",
+        "d2938268-0a90-427c-8bef-899fdb2eedad",
         "06beb4fb-6729-45d9-a33b-6902cc6c4f4c",
         "74f107aa-39b1-40d8-ae2d-058b12a34ae3",
         "90dec00e-0334-4fcf-94f3-03c993249bca",
